@@ -23,11 +23,11 @@ var validation = {
       "description":"code postal"
     },
     "adresse.ville":{
-      "bsonType":"int",
+      "bsonType":"string",
       "description":"code postal"
     },
     "adresse.pays":{
-      "bsonType":"int",
+      "bsonType":"string",
       "description":"code postal"
     },
      "age":{
