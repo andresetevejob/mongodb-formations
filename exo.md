@@ -47,7 +47,7 @@ etudiants =[
     "nom":"Yves",
     "prenom":"Julien",
     "adresse":{
-      "codePostal": 59000
+      "codePostal": 59000,
       "ville": "Lille",
       "pays":"France"
     },
@@ -58,7 +58,7 @@ etudiants =[
     "nom":"Jules",
     "prenom":"Verdes",
     "adresse":{
-      "codePostal": 59200
+      "codePostal": 59200,
       "ville": "Tourcoing",
       "pays":"France"
     },
