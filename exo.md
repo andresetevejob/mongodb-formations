@@ -75,23 +75,23 @@ etudiants =[
 ### 4 Execution de la validation lors de la création de la collection
 
 ````
- db.createCollection("etudiants", { validator: { $jsonSchema: { "bsonType": "object", "required": ["nom", "prenom", "status", "age","notes"], "properties": validation } } })
+ db.createCollection("etudiants", { validator: { $jsonSchema: { "bsonType": "object", "required": ["nom", "prenom", "status", "age"], "properties": validation } } })
 ````
 
-### 4 Création des données
+### 5 Création des données
 
 ````
 db.etudiants.insertMany(etudiants);
 ````
 
-### 5 Création d'un document qui ne respecte pas la validation
+### 6 Création d'un document qui ne respecte pas la validation
 `````
 db.etudiants.insertOne({"nom":"dummyData","prenom":"DummyData",age:12,"status":"Inscris"})
 
 ``````
 L'enregistrement echouera car l'utilisateur n'a pas l'age requis
 
-### 6 validation d'un champ tableau
+### 7 validation d'un champ tableau
 
 Rajouter le code ci-dessous à notre objet validation du précédent fichier js
 `````
